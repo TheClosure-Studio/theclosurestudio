@@ -109,7 +109,7 @@ export default function ProjectCard({
           {/* Laptop Base */}
           <div className="relative bg-linear-to-b  rounded-lg  ">
             {/* Laptop Screen */}
-            <div className="relative bg-black rounded overflow-hidden h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[28rem]">
+            <div className="relative bg-black rounded overflow-hidden h-96 xl:h-[28rem]">
               {/* Screen Content with Parallax */}
               <motion.div
                 className="absolute inset-0 w-full h-full"
