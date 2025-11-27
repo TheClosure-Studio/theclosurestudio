@@ -254,7 +254,7 @@ export default function ProjectStudio() {
                     />
                   </div>
                 </div>
-                      <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl pt-4 sm:pt-6 md:pt-8 font-instrument-serif relative top-4 sm:top-6 md:top-6 text-neutral-600">
+                      <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl pt-4 sm:pt-6 md:pt-8 font-instrument-serif  text-neutral-600">
                         Stage - <span className="">{stage.number}</span>
                       </p>
                       
