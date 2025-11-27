@@ -29,9 +29,9 @@ const stages = [
   },
   {
     number: "03",
-    title: "Project Design Sytem & Wireframes",
+    title: "Project Design Sytem & Prototypes",
     description:
-      "Our design team creates wireframes, mockups, and prototypes that bring your vision to life. We focus on user experience, visual appeal, and functionality to ensure your design is both beautiful and effective.",
+      "Our design team creates design system, mockups, and prototypes that bring your vision to life. We focus on user experience, visual appeal, and functionality to ensure your design is both beautiful and effective.",
     accent: "#4DD2C5",
     highlightDots: [
       0, 1, 2, 6, 7, 8, 9, 17, 18, 26, 31, 39, 40, 41, 49, 54, 62, 63, 71, 72,
@@ -165,7 +165,7 @@ function DotPattern({ accent, highlights }) {
 
 function SplitTitle({ title }) {
   const words = title.split(" ");
-  const midPoint = Math.ceil(words.length / 2);
+  const midPoint = Math.ceil(words.length / 2.5);
   const firstHalf = words.slice(0, midPoint).join(" ");
   const secondHalf = words.slice(midPoint).join(" ");
 
