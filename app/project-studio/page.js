@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 const stages = [
   {
     number: "01",
-    title: "Project Take Up & Requirement Analysis",
+    title: "Project Take-up & Requirement Analysis",
     description:
       "We begin by understanding your vision, goals, and specific requirements. Through detailed discussions and analysis, we create a comprehensive project roadmap that aligns perfectly with your business objectives.",
     accent: "#8B5CF6",
@@ -18,7 +18,7 @@ const stages = [
   },
   {
     number: "02",
-    title: "Client Choice",
+    title: "Client Choice & Color Palette ",
     description:
       "You choose the color palette, theme, fonts, and overall aesthetic direction. We present curated options and work with your preferences to establish the visual foundation of your project.",
     accent: "#F97316",
@@ -29,7 +29,7 @@ const stages = [
   },
   {
     number: "03",
-    title: "Project Design",
+    title: "Project Design Sytem & Wireframes",
     description:
       "Our design team creates wireframes, mockups, and prototypes that bring your vision to life. We focus on user experience, visual appeal, and functionality to ensure your design is both beautiful and effective.",
     accent: "#4DD2C5",
@@ -51,7 +51,7 @@ const stages = [
   },
   {
     number: "05",
-    title: "Initial Version and Testing",
+    title: "Initial Version & Testing v1.0",
     description:
       "We conduct thorough testing across devices and browsers to ensure everything works flawlessly. Performance optimization, bug fixes, and quality assurance are completed before client review.",
     accent: "#F97316",
@@ -62,7 +62,7 @@ const stages = [
   },
   {
     number: "06",
-    title: "Client Inspection",
+    title: "Client Inspection & Feedback",
     description:
       "You review the initial version and provide feedback. We collaborate closely to refine and adjust elements based on your input, ensuring the final product exceeds your expectations.",
     accent: "#4DD2C5",
@@ -165,17 +165,17 @@ function DotPattern({ accent, highlights }) {
 
 function SplitTitle({ title }) {
   const words = title.split(" ");
-  const midPoint = Math.ceil(words.length / 2);
+  const midPoint = Math.ceil(words.length / 2.9);
   const firstHalf = words.slice(0, midPoint).join(" ");
   const secondHalf = words.slice(midPoint).join(" ");
 
   return (
     <>
-      <div className="font-boldonse text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+      <div className="font-boldonse text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pb-3 text-neutral-200">
         {firstHalf}
       </div>
       {secondHalf && (
-        <div className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl">
+        <div className="font-boldonse text-3xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-5 tracking-wide">
           {" "}
           {secondHalf}
         </div>
@@ -254,7 +254,7 @@ export default function ProjectStudio() {
                     />
                   </div>
                 </div>
-                      <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl pt-8 sm:pt-12 md:pt-15 font-boldonse relative top-4 sm:top-6 md:top-10 text-neutral-600">
+                      <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl pt-8 sm:pt-12 md:pt-15 font-instrument-serif relative top-4 sm:top-6 md:top-6 text-neutral-600">
                         Stage - <span className="">{stage.number}</span>
                       </p>
                       

@@ -17,12 +17,10 @@ const services = [
       {
         title: "E-commerce Design",
         description:
-          "Create stunning online storefronts that convert visitors into customers with intuitive navigation and compelling product displays.",
+          "Create stunning online storefronts that convert visitors into customers with intuitive navigation and compelling product displays. We offer a wide range of services to help you create a website that is both beautiful and functional.",
         features: [
-          "Product showcase layouts",
-          "Shopping cart design",
-          "Checkout flow optimization",
-          "Mobile shopping experience",
+          "Product showcase layouts  | Shopping cart design | Checkout flow optimization | Mobile shopping experience | Desktop shopping experience | Payment gateway integration | Payment success page ",
+          
         ],
         highlightDots: [
           9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 26, 27, 29, 30, 32, 33, 35, 36,
@@ -33,12 +31,9 @@ const services = [
       {
         title: "Portfolio Websites",
         description:
-          "Showcase your work beautifully with portfolio designs that highlight your projects and tell your story effectively.",
+          "Showcase your work beautifully with portfolio designs that highlight your projects and tell your story effectively. we design portfolio websites that are both beautiful and functional.",
         features: [
-          "Project galleries",
-          "Case study layouts",
-          "About page design",
-          "Contact integration",
+          "Project galleries | Case study layouts | About page design | Contact integration | Blog page design "
         ],
         highlightDots: [
           2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16, 22, 29, 30, 38, 39, 48, 49,
@@ -48,12 +43,10 @@ const services = [
       {
         title: "Business Websites",
         description:
-          "Professional business websites that establish credibility and help you connect with your target audience effectively.",
+          "Professional business websites that establish credibility and help you connect with your target audience effectively. We build website that establish credibility and help you connect with your target audience effectively.",
         features: [
-          "Service page layouts",
-          "Team section design",
-          "Testimonial displays",
-          "Call-to-action optimization",
+          "Service page layouts | Team section design | Testimonial displays | Call-to-action optimization ",
+          
         ],
         highlightDots: [
           0, 1, 2, 9, 10, 11, 12, 13, 18, 19, 20, 21, 22, 23, 24, 28, 29, 30,
@@ -64,12 +57,9 @@ const services = [
       {
         title: "Personal Branding",
         description:
-          "Build your personal brand online with custom designs that reflect your unique personality and professional expertise.",
+          "Build your personal brand online with custom designs that reflect your unique personality and professional expertise. We build personal branding websites that are both beautiful and functional.",
         features: [
-          "Personal brand identity",
-          "Blog layout design",
-          "Social media integration",
-          "Resume/portfolio pages",
+          "Personal brand identity | Blog layout design | Social media integration | Resume/portfolio pages ",
         ],
         highlightDots: [
           0, 8, 10, 16, 20, 21, 22, 23, 24, 29, 33, 37, 43, 45, 46, 47, 48, 49,
@@ -115,12 +105,9 @@ const services = [
       {
         title: "SaaS Applications",
         description:
-          "Build scalable software-as-a-service platforms with subscription management, user authentication, and payment integration.",
+          "Build scalable software-as-a-service platforms with subscription management, user authentication, and payment integration. We build SaaS applications that are both beautiful and functional.",
         features: [
-          "User authentication & authorization",
-          "Subscription billing systems",
-          "Multi-tenant architecture",
-          "API integrations",
+          "User authentication & authorization | Subscription billing systems | Multi-tenant architecture | API integrations ",
         ],
         highlightDots: [
           2,
@@ -191,12 +178,9 @@ const services = [
       {
         title: "Dashboards",
         description:
-          "Create powerful data visualization dashboards that help businesses make informed decisions with real-time analytics.",
+          "Create powerful data visualization dashboards that help businesses make informed decisions with real-time analytics. We build dashboards that are both beautiful and functional.",
         features: [
-          "Real-time data visualization",
-          "Customizable widgets",
-          "Export & reporting tools",
-          "Role-based access control",
+          "Real-time data visualization | Customizable widgets | Export & reporting tools | Role-based access control ",
         ],
         highlightDots: [
           0, 8, 10, 13, 16, 20, 21, 22, 23, 24, 27, 28, 29, 30, 31, 32, 33, 34,
@@ -207,12 +191,9 @@ const services = [
       {
         title: "E-commerce",
         description:
-          "Develop full-featured online stores with shopping carts, payment processing, inventory management, and order tracking.",
+          "Develop full-featured online stores with shopping carts, payment processing, inventory management, and order tracking. We build e-commerce websites that are both beautiful and functional.",
         features: [
-          "Shopping cart & checkout",
-          "Payment gateway integration",
-          "Inventory management",
-          "Order tracking system",
+          "Shopping cart & checkout | Payment gateway integration | Inventory management | Order tracking system ",
         ],
         highlightDots: [
           4, 5, 12, 13, 14, 21, 22, 23, 24, 29, 31, 32, 38, 39, 40, 41, 42, 49,
@@ -222,12 +203,9 @@ const services = [
       {
         title: "Custom Web Apps",
         description:
-          "Tailored web applications built to your exact specifications, solving unique business challenges with custom solutions.",
+          "Tailored web applications built to your exact specifications, solving unique business challenges with custom solutions. We build custom web applications that are both beautiful and functional.",
         features: [
-          "Custom functionality",
-          "Third-party integrations",
-          "Scalable architecture",
-          "Maintenance & support",
+          "Custom functionality | Third-party integrations | Scalable architecture | Maintenance & support  ",
         ],
         highlightDots: [
           4, 11, 13, 15, 19, 21, 22, 23, 25, 28, 30, 31, 32, 34, 36, 37, 38, 39,
@@ -267,19 +245,16 @@ const services = [
     id: "03",
     title: "Branding & Logo Design",
     description:
-      "We create distinctive brand identities and logos that communicate your story clearly. From strategy to final visuals, we deliver systems that stay memorable, consistent, and ready to scale across all platforms.",
+      "We create distinctive brand identities and logos that communicate your story clearly. From strategy to final visuals, we deliver systems that stay memorable, consistent, and ready to scale across all platforms. We build brand identities and logos that are both beautiful and functional.",
     accent: "#4DD2C5",
 
     categoryCards: [
       {
         title: "Brand Identity",
         description:
-          "Develop a complete brand identity system that reflects your values, mission, and unique positioning in the market.",
+          "Develop a complete brand identity system that reflects your values, mission, and unique positioning in the market. We build brand identity systems that are both beautiful and functional.",
         features: [
-          "Brand strategy development",
-          "Visual identity systems",
-          "Brand guidelines",
-          "Tone of voice definition",
+          "Brand strategy development | Visual identity systems | Brand guidelines | Tone of voice definition ",
         ],
         highlightDots: [
           2, 3, 4, 5, 6, 10, 16, 18, 22, 26, 27, 30, 31, 32, 35, 36, 39, 40, 41,
@@ -289,12 +264,9 @@ const services = [
       {
         title: "Logo Design",
         description:
-          "Create memorable logos that instantly communicate your brand essence and leave a lasting impression on your audience.",
+          "Create memorable logos that instantly communicate your brand essence and leave a lasting impression on your audience. We build logos that are both beautiful and functional.",
         features: [
-          "Multiple logo concepts",
-          "Logo variations",
-          "Color palette selection",
-          "Typography pairing",
+          "Multiple logo concepts | Logo variations | Color palette selection | Typography pairing  ",
         ],
         highlightDots: [
           4, 12, 13, 14, 21, 22, 23, 31, 40, 48, 49, 50, 56, 57, 58, 59, 60, 65,
@@ -304,12 +276,9 @@ const services = [
       {
         title: "Visual Systems",
         description:
-          "Build comprehensive visual systems that ensure consistency across all touchpoints, from digital to print materials.",
+          "Build comprehensive visual systems that ensure consistency across all touchpoints, from digital to print materials. We build visual systems that are both beautiful and functional.",
         features: [
-          "Design system creation",
-          "Component libraries",
-          "Style guide documentation",
-          "Asset management",
+          "Design system creation | Component libraries | Style guide documentation | Asset management ",
         ],
 
         highlightDots: [
@@ -321,12 +290,9 @@ const services = [
       {
         title: "Brand Strategy",
         description:
-          "Define your brand positioning, messaging, and strategy to ensure every element aligns with your business goals.",
+          "Define your brand positioning, messaging, and strategy to ensure every element aligns with your business goals. We build brand strategy systems that are both beautiful and functional.",
         features: [
-          "Market positioning",
-          "Target audience analysis",
-          "Competitive research",
-          "Brand messaging framework",
+          "Market positioning | Target audience analysis | Competitive research | Brand messaging framework   ",
         ],
         highlightDots: [
           0, 1, 2, 3, 4, 6, 7, 8, 13, 15, 18, 19, 20, 22, 24, 26, 27, 31, 33,
@@ -522,14 +488,14 @@ export default function Services() {
                     >
                       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-0">
                         {/* Content Section */}
-                        <div className="flex flex-col gap-3 sm:gap-4 flex-1">
+                        <div className="flex flex-col gap-3 sm:gap-4 justify-between">
                           <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-boldonse text-neutral-900 mb-2 sm:mb-3">
                             {category.title}
                           </h3>
                           <p className="text-neutral-700 font-instrument-serif mb-3 sm:mb-4 text-base sm:text-lg md:text-xl">
                             {category.description}
                           </p>
-                          <div className="w-full  flex md:hidden justify-center  pb-4 md:mt-0">
+                          <div className="w-full  flex md:hidden justify-center  pb-4 md:mt-0 md:pb-10">
                           <div className=" p-2">
                             <DotPattern
                               accent={service.accent}
@@ -537,21 +503,7 @@ export default function Services() {
                             />
                           </div>
                         </div >
-                          <ul className="space-y-2 ">
-                            {category.features.map((feature, idx) => (
-                              <li
-                                key={idx}
-                                className="text-sm sm:text-base text-neutral-600 font-instrument-serif flex items-start gap-2"
-                              >
-                                <div className="text-lg sm:text-xl md:text-2xl">
-                                  <span
-                                    className={`h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 rounded-full bg-[${service.accent}]`}
-                                  />
-                                  {feature}
-                                </div>
-                              </li>
-                            ))}
-                          </ul>
+                          <p className="text-neutral-700 font-instrument-serif mb-3 sm:mb-4 text-base sm:text-lg md:text-xl md:pt-10">{category.features.join(" | ")}</p>
                         </div>
 
                         {/* Dot Pattern Section */}

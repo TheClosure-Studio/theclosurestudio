@@ -51,10 +51,7 @@ export default function Home() {
                   Project Takeup & Requirement Analysis
                 </h3>
                 <p className="font-instrument-serif tracking-wide text-neutral-400 text-sm sm:text-base">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  ipsum dicta soluta. Provident molestias sed ad officiis
-                  explicabo dolore ex! Repellat itaque ducimus illum eos iusto
-                  natus quae culpa odit!
+                We begin by understanding your vision, goals, and specific requirements. Through detailed discussions and analysis, we create a comprehensive project roadmap that aligns perfectly with your business objectives.
                 </p>
               </div>
               <svg
@@ -72,13 +69,10 @@ export default function Home() {
               </svg>
               <div className="flex-col flex p-3 md:p-4 bg-neutral-900 w-full md:w-1/4 rounded gap-3 sm:gap-5 min-w-[280px]">
                 <h3 className="text-lg sm:text-xl">
-                  Project Takeup & Requirement Analysis
+                Client Choice & Color Palette 
                 </h3>
                 <p className="font-instrument-serif tracking-wide text-neutral-400 text-sm sm:text-base">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  ipsum dicta soluta. Provident molestias sed ad officiis
-                  explicabo dolore ex! Repellat itaque ducimus illum eos iusto
-                  natus quae culpa odit!
+                You choose the color palette, theme, fonts, and overall aesthetic direction. We present curated options and work with your preferences to establish the visual foundation of your project.
                 </p>
               </div>
               <svg
@@ -96,13 +90,10 @@ export default function Home() {
               </svg>
               <div className="flex-col flex p-3 sm:p-4 bg-neutral-900 w-full md:w-1/4 rounded gap-3 sm:gap-5 min-w-[280px]">
                 <h3 className="text-lg sm:text-xl">
-                  Project Takeup & Requirement Analysis
+                  Project Design Sytem & Wireframes
                 </h3>
                 <p className="font-instrument-serif tracking-wide text-neutral-400 text-sm sm:text-base">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  ipsum dicta soluta. Provident molestias sed ad officiis
-                  explicabo dolore ex! Repellat itaque ducimus illum eos iusto
-                  natus quae culpa odit!
+                Our design team creates wireframes, mockups, and prototypes that bring your vision to life. We focus on user experience, visual appeal, and functionality to ensure your design is both beautiful and effective.
                 </p>
               </div>
               <svg
@@ -120,13 +111,10 @@ export default function Home() {
               </svg>
               <div className="flex-col flex p-3 sm:p-4 bg-neutral-900 w-full md:w-1/4 rounded gap-3 sm:gap-5 relative min-w-[280px]">
                 <h3 className="text-lg sm:text-xl">
-                  Project Takeup & Requirement Analysis
+                Initial Version & Testing v1.0
                 </h3>
                 <p className="font-instrument-serif tracking-wide text-neutral-400 text-sm sm:text-base">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  ipsum dicta soluta. Provident molestias sed ad officiis
-                  explicabo dolore ex! Repellat itaque ducimus illum eos iusto
-                  natus quae culpa odit!
+                We conduct thorough testing across devices and browsers to ensure everything works flawlessly. Performance optimization, bug fixes, and quality assurance are completed before client review.
                 </p>
               </div>
               <div>
