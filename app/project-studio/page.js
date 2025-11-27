@@ -165,17 +165,17 @@ function DotPattern({ accent, highlights }) {
 
 function SplitTitle({ title }) {
   const words = title.split(" ");
-  const midPoint = Math.ceil(words.length / 2.9);
+  const midPoint = Math.ceil(words.length / 2);
   const firstHalf = words.slice(0, midPoint).join(" ");
   const secondHalf = words.slice(midPoint).join(" ");
 
   return (
     <>
-      <div className="font-boldonse text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pb-3 text-neutral-200">
+      <div className="font-boldonse text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pb-3 text-neutral-200">
         {firstHalf}
       </div>
       {secondHalf && (
-        <div className="font-boldonse text-3xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-5 tracking-wide">
+        <div className="font-boldonse text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-5 tracking-wide">
           {" "}
           {secondHalf}
         </div>
@@ -190,7 +190,7 @@ export default function ProjectStudio() {
       <Navbar theme="black" />
       <section className="relative bg-black pb-20 pt-20">
         {/* Header Section */}
-        <div className="mx-auto px-4 sm:px-5 md:px-10 py-12 sm:py-16 md:py-24 flex items-center w-full">
+        <div className="mx-auto px-2 sm:px-5 md:px-10 py-12 sm:py-16 md:py-24 flex items-center w-full">
           <div className="h-full w-full">
             <div className="flex items-center justify-between text-white font-boldonse text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl py-4 sm:py-6 md:py-7 px-4 sm:px-8 md:px-12 w-full">
               <h2 className="tracking-wider text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
@@ -212,7 +212,7 @@ export default function ProjectStudio() {
         </div>
 
         {/* Stages Section */}
-        <div className="mx-auto px-4 sm:px-6 md:px-10 pt-6 sm:pt-8 md:pt-10 pb-6 sm:pb-8 md:pb-10 space-y-6 sm:space-y-8 md:space-y-10">
+        <div className="mx-auto px-2 sm:px-6 md:px-10 pt-6 sm:pt-8 md:pt-10 pb-6 sm:pb-8 md:pb-10 space-y-6 sm:space-y-8 md:space-y-10">
           {stages.map((stage, index) => (
             <div key={stage.number}>
               <motion.article
@@ -254,7 +254,7 @@ export default function ProjectStudio() {
                     />
                   </div>
                 </div>
-                      <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl pt-8 sm:pt-12 md:pt-15 font-instrument-serif relative top-4 sm:top-6 md:top-6 text-neutral-600">
+                      <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl pt-4 sm:pt-6 md:pt-8 font-instrument-serif relative top-4 sm:top-6 md:top-6 text-neutral-600">
                         Stage - <span className="">{stage.number}</span>
                       </p>
                       
