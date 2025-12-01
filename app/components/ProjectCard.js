@@ -97,7 +97,7 @@ export default function ProjectCard({
   };
 
   return (
-    <Link href={link} className="block group">
+    <Link href={link} target="_blank" className="block group">
       <motion.div
         ref={cardRef}
         className="relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-full"
@@ -109,7 +109,7 @@ export default function ProjectCard({
           {/* Laptop Base */}
           <div className="relative bg-linear-to-b  rounded-lg  ">
             {/* Laptop Screen */}
-            <div className="relative bg-black rounded overflow-hidden h-96 xl:h-[28rem]">
+            <div className="relative bg-black rounded overflow-hidden h-96 xl:h-[40rem]">
               {/* Screen Content with Parallax */}
               <motion.div
                 className="absolute inset-0 w-full h-full"

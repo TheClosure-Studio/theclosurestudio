@@ -43,7 +43,8 @@ export default function Contact() {
 
           <div className="font-boldonse bg-black text-white px-4 sm:px-5 py-2 sm:py-3 rounded-md">
             <Link
-              href="/contact"
+              href="https://tally.so/r/5BX5QM"
+              target="_blank"
               className="text-lg sm:text-xl md:text-2xl font-medium"
             >
               Reach Out
@@ -55,7 +56,8 @@ export default function Contact() {
           <div className="flex flex-col sm:flex-row items-center justify-center max-w-5xl gap-4 sm:gap-6 md:gap-8 lg:gap-10 w-full">
             <div>
               <Link
-                href="/contact"
+                href="https://www.instagram.com/theclosure.studio/"
+                target="_blank"
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium"
               >
                 <h2 className="text-center sm:text-left">
@@ -70,20 +72,22 @@ export default function Contact() {
             </div>
             <div>
               <Link
-                href="/contact"
+                href="https://x.com/ClosureStudio"
+                target="_blank"
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium"
               >
                 <h2 className="text-center sm:text-left">
                   <span className="text-neutral-600 font-medium">(X)</span>{" "}
                   <span className="hover:underline transition-all duration-500">
-                    theclosure.studio
+                    ClosureStudio
                   </span>
                 </h2>
               </Link>
             </div>
             <div>
               <Link
-                href="/contact"
+                href="https://www.linkedin.com/the-closure-studio/"
+                target="_blank"
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium"
               >
                 <h2 className="text-center sm:text-left">
@@ -91,7 +95,7 @@ export default function Contact() {
                     (LinkedIn)
                   </span>{" "}
                   <span className="hover:underline transition-all duration-500">
-                    The Closure Studio
+                    The-Closure-Studio
                   </span>
                 </h2>
               </Link>

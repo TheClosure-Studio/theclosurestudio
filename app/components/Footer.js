@@ -69,7 +69,8 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-between gap-4 sm:gap-6 md:gap-10 lg:gap-20 text-neutral-300 w-full lg:w-5xl">
             <div className="text-center sm:text-left">
               <Link
-                href="/contact"
+                href="https://www.instagram.com/theclosure.studio/"
+                target="_blank"
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium"
               >
                 <h2>
@@ -84,20 +85,22 @@ export default function Footer() {
             </div>
             <div className="text-center sm:text-left">
               <Link
-                href="/contact"
+                href="https://x.com/ClosureStudio"
+                target="_blank"
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium"
               >
                 <h2>
                   <span className="text-neutral-600 font-medium">(X)</span>{" "}
                   <span className="hover:underline transition-all duration-500">
-                    theclosure.studio
+                    ClosureStudio
                   </span>
                 </h2>
               </Link>
             </div>
             <div className="text-center sm:text-left">
               <Link
-                href="/contact"
+                href="https://www.linkedin.com/the-closure-studio/"
+                target="_blank"
                 className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium"
               >
                 <h2>

@@ -141,3 +141,8 @@ svg.active .svg-elem-1 {
   stroke-dashoffset: 0;
   fill: rgb(255, 255, 255);
 }
+
+body.loading-active .floating-menu-trigger {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}

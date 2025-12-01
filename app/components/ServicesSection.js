@@ -17,7 +17,7 @@ const services = [
       "Mobile First – smooth on devices .....many more",
     ],
     accent: "#8B5CF6",
-    link: "/services/web-design",
+    link: "/services",
     highlightDots: [
       0, 1, 7, 8, 9, 17, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33, 38, 39, 40, 41,
       42, 47, 48, 49, 50, 51, 56, 57, 58, 59, 60, 63, 71, 72, 73, 79, 80,
@@ -37,7 +37,7 @@ const services = [
       "Security – protected architecture",
     ],
     accent: "#F97316",
-    link: "/services/web-development",
+    link: "/services",
     highlightDots: [
       4, 5, 6, 12, 13, 14, 20, 21, 22, 28, 29, 30, 36, 37, 38, 39, 40, 41, 42,
       43, 50, 51, 58, 59, 66, 67, 74, 75,
@@ -58,7 +58,7 @@ const services = [
       "Professional Image – trustworthy look",
     ],
     accent: "#4DD2C5",
-    link: "/services/branding",
+    link: "/services",
     highlightDots: [
       2, 6, 12, 14, 20, 21, 22, 23, 24, 28, 29, 31, 33, 34, 36, 37, 38, 39, 40,
       41, 42, 43, 44, 45, 47, 48, 49, 50, 51, 53, 54, 56, 60, 62, 65, 69, 73,

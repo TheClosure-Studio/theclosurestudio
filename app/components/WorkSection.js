@@ -3,43 +3,43 @@ import ProjectCard from "./ProjectCard";
 const projects = [
   {
     id: 1,
-    image: "/t1.jpg",
-    title: "Summr",
-    type: "Branding & 3D Website",
-    category: "Branding",
-    year: "2024",
-    link: "/work/summr",
-    white : false
+    image: "/dataquotes.png",
+    title: "DataQuotes",
+    type: "Edu-Tech Platform",
+    category: "Branding & Web Development",
+    year: "2025",
+    link: "https://dataquotes.net",
+    white : true
   },
   {
     id: 2,
-    image: "/t2.jpg",
-    title: "E-Commerce Platform",
-    type: "E-Commerce Website",
-    category: "E-Commerce",
+    image: "/champ.jpeg",
+    title: "Koushik-Champ",
+    type: "Portfolio Website",
+    category: "Web Design & Development",
     year: "2024",
-    link: "/work/ecommerce",
-    white : true
-  },
-  {
-    id: 3,
-    image: "/t1.jpg",
-    title: "Corporate Website",
-    type: "Corporate Website",
-    category: "Corporate",
-    year: "2023",
-    link: "/work/corporate",
+    link: "https://koushik-champ.vercel.app/",
     white : false
   },
   {
-    id: 4,
-    image: "/t2.jpg",
-    title: "Techvenchure Dubai",
-    type: "3D Website",
+    id: 3,
+    image: "/fmcg.png",
+    title: "FMCG Website",
+    type: "Blog Website & Branding",
     category: "Web Development",
-    year: "2024",
-    link: "/work/techvenchure",
+    year: "2025",
+    link: "https://fmcginfluencers.com",
     white : true
+  },
+  {
+    id: 4,
+    image: "/prepgrid.png",
+    title: "PrepGrid",
+    type: "AI based Interview Prep",
+    category: "Web Design & Development",
+    year: "2024",
+    link: "https://prepgrid.vercel.app/",
+    white : false
   },
 ];
 

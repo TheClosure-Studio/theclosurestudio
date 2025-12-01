@@ -549,7 +549,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
                   document.body.classList.remove("menu-open");
                 }
               }}
-              className="hidden lg:flex fixed top-4 right-4 z-[9999] w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#2514a9]/50 text-white rounded-full items-center justify-center text-3xl sm:text-4xl md:text-5xl font-light hover:bg-[#2514a9] transition-all duration-300 shadow-2xl hover:scale-110 backdrop-blur-sm"
+              className="floating-menu-trigger hidden lg:flex fixed top-4 right-4 z-[999] w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#2514a9]/50 text-white rounded-full items-center justify-center text-3xl sm:text-4xl md:text-5xl font-light hover:bg-[#2514a9] transition-all duration-300 shadow-2xl hover:scale-110 backdrop-blur-sm"
               aria-label={isFullScreenMenuOpen ? "Close menu" : "Open menu"}
             >
               <motion.span
@@ -575,7 +575,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
               document.body.classList.remove("menu-open");
             }
           }}
-          className="lg:hidden fixed top-4 right-4 z-[9999] w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#2514a9]/50 text-white rounded-full flex items-center justify-center text-3xl sm:text-4xl md:text-5xl font-light hover:bg-[#2514a9] transition-all duration-300 shadow-2xl hover:scale-110 backdrop-blur-sm"
+          className="floating-menu-trigger lg:hidden fixed top-4 right-4 z-[999] w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#2514a9]/50 text-white rounded-full flex items-center justify-center text-3xl sm:text-4xl md:text-5xl font-light hover:bg-[#2514a9] transition-all duration-300 shadow-2xl hover:scale-110 backdrop-blur-sm"
           aria-label={isFullScreenMenuOpen ? "Close menu" : "Open menu"}
         >
           <motion.span
@@ -687,7 +687,8 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
                       </p>
                       <div className="flex flex-col gap-2 md:gap-3 text-neutral-300">
                         <Link
-                          href="/contact"
+                          href="https://www.instagram.com/theclosure.studio/"
+                          target="_blank"
                           className="text-sm md:text-lg font-medium hover:text-neutral-100 transition-colors duration-300"
                         >
                           <span className="text-neutral-500 font-medium">
@@ -698,25 +699,27 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
                           </span>
                         </Link>
                         <Link
-                          href="/contact"
+                          href="https://x.com/ClosureStudio"
+                          target="_blank"
                           className="text-sm md:text-lg font-medium hover:text-neutral-100 transition-colors duration-300"
                         >
                           <span className="text-neutral-500 font-medium">
                             (X)
                           </span>{" "}
                           <span className="hover:underline transition-all duration-500">
-                            theclosure.studio
+                            ClosureStudio
                           </span>
                         </Link>
                         <Link
-                          href="/contact"
+                          href="https://www.linkedin.com/the-closure-studio/"
+                          target="_blank"
                           className="text-sm md:text-lg font-medium hover:text-neutral-100 transition-colors duration-300"
                         >
                           <span className="text-neutral-500 font-medium">
                             (LinkedIn)
                           </span>{" "}
                           <span className="hover:underline transition-all duration-500">
-                            The Closure Studio
+                              The-Closure-Studio
                           </span>
                         </Link>
                       </div>
@@ -907,7 +910,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
                       </span>
                     </Link>
                     <Link
-                      href="/contact"
+                      href="/project-studio"
                       className="flex items-center justify-between gap-2 h-10 bg-neutral-800 text-white rounded-full text-xs sm:text-sm md:text-base transition hover:bg-neutral-200 p-1 group duration-500 hover:text-neutral-900 w-full sm:w-1/2"
                     >
                       <span className="px-3 sm:px-4 group-hover:text-neutral-800">
@@ -943,7 +946,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
                 document.body.classList.remove("menu-open");
               }
             }}
-            className="hidden lg:flex fixed top-4 right-4 z-[9999] w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#2514a9]/50 text-white rounded-full items-center justify-center text-3xl sm:text-4xl md:text-5xl font-light hover:bg-[#2514a9] transition-all duration-300 shadow-2xl hover:scale-110 backdrop-blur-sm"
+            className="floating-menu-trigger hidden lg:flex fixed top-4 right-4 z-[9998] w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#2514a9]/50 text-white rounded-full items-center justify-center text-3xl sm:text-4xl md:text-5xl font-light hover:bg-[#2514a9] transition-all duration-300 shadow-2xl hover:scale-110 backdrop-blur-sm"
             aria-label={isFullScreenMenuOpen ? "Close menu" : "Open menu"}
           >
             <motion.span
@@ -969,7 +972,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
             document.body.classList.remove("menu-open");
           }
         }}
-        className="lg:hidden fixed top-4 right-4 z-[9999] w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#2514a9]/50 text-white rounded-full flex items-center justify-center text-3xl sm:text-4xl md:text-5xl font-light hover:bg-[#2514a9] transition-all duration-300 shadow-2xl hover:scale-110 backdrop-blur-sm"
+        className="floating-menu-trigger lg:hidden fixed top-4 right-4 z-[9999] w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#2514a9]/50 text-white rounded-full flex items-center justify-center text-3xl sm:text-4xl md:text-5xl font-light hover:bg-[#2514a9] transition-all duration-300 shadow-2xl hover:scale-110 backdrop-blur-sm"
         aria-label={isFullScreenMenuOpen ? "Close menu" : "Open menu"}
       >
         <motion.span
@@ -1075,7 +1078,8 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
                     </p>
                     <div className="flex flex-col gap-2 md:gap-3 text-neutral-300">
                       <Link
-                        href="/contact"
+                        href="https://www.instagram.com/theclosure.studio/"
+                        target="_blank"
                         className="text-sm md:text-lg font-medium hover:text-neutral-100 transition-colors duration-300"
                       >
                         <span className="text-neutral-500 font-medium">
@@ -1086,7 +1090,8 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
                         </span>
                       </Link>
                       <Link
-                        href="/contact"
+                        href="https://x.com/ClosureStudio"
+                        target="_blank"
                         className="text-sm md:text-lg font-medium hover:text-neutral-100 transition-colors duration-300"
                       >
                         <span className="text-neutral-500 font-medium">
@@ -1097,14 +1102,15 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
                         </span>
                       </Link>
                       <Link
-                        href="/contact"
+                        href="https://www.linkedin.com/the-closure-studio/"
+                        target="_blank"
                         className="text-sm md:text-lg font-medium hover:text-neutral-100 transition-colors duration-300"
                       >
                         <span className="text-neutral-500 font-medium">
                           (LinkedIn)
                         </span>{" "}
                         <span className="hover:underline transition-all duration-500">
-                          The Closure Studio
+                          The-Closure-Studio
                         </span>
                       </Link>
                     </div>

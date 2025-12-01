@@ -55,6 +55,20 @@ export default function LoadingAnimation() {
     }
   }, [pathname]);
 
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+
+    if (isLoading) {
+      document.body.classList.add("loading-active");
+    } else {
+      document.body.classList.remove("loading-active");
+    }
+
+    return () => {
+      document.body.classList.remove("loading-active");
+    };
+  }, [isLoading]);
+
   return (
     <AnimatePresence mode="wait">
       {isLoading && (

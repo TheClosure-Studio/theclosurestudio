@@ -172,7 +172,7 @@ export default function Navbar({ theme = "white" }) {
           isDark
             ? "bg-white text-black hover:bg-gray-200"
             : "bg-black text-white hover:bg-gray-800"
-        } rounded-full flex items-center justify-center text-3xl sm:text-4xl md:text-5xl font-light transition-all duration-300 shadow-lg hover:scale-110 z-[9999]`}
+        } rounded-full flex items-center justify-center text-3xl sm:text-4xl md:text-5xl font-light transition-all duration-300 shadow-lg hover:scale-110 z-[9998]`}
         aria-label={isFullScreenMenuOpen ? "Close menu" : "Open menu"}
       >
         <motion.span
@@ -284,7 +284,8 @@ export default function Navbar({ theme = "white" }) {
                     </p>
                     <div className="flex flex-col gap-2 md:gap-3 text-neutral-200">
                       <Link
-                        href="/contact"
+                            href="https://www.instagram.com/theclosure.studio/"
+                        target="_blank"
                         className="text-sm sm:text-base md:text-lg font-medium hover:text-neutral-100 transition-colors duration-300"
                       >
                         <span className="text-neutral-500 font-medium">
@@ -295,25 +296,27 @@ export default function Navbar({ theme = "white" }) {
                         </span>
                       </Link>
                       <Link
-                        href="/contact"
+                        href="https://x.com/ClosureStudio"
+                        target="_blank"
                         className="text-sm sm:text-base md:text-lg font-medium hover:text-neutral-100 transition-colors duration-300"
                       >
                         <span className="text-neutral-500 font-medium">
                           (X)
                         </span>{" "}
                         <span className="hover:underline transition-all duration-500">
-                          theclosure.studio
+                          ClosureStudio
                         </span>
                       </Link>
                       <Link
-                        href="/contact"
+                        href="https://www.linkedin.com/the-closure-studio/"
+                        target="_blank"
                         className="text-sm sm:text-base md:text-lg font-medium hover:text-neutral-100 transition-colors duration-300"
                       >
                         <span className="text-neutral-500 font-medium">
                           (LinkedIn)
                         </span>{" "}
                         <span className="hover:underline transition-all duration-500">
-                          The Closure Studio
+                          The-Closure-Studio
                         </span>
                       </Link>
                     </div>

@@ -39,7 +39,8 @@ export default function ContactSection() {
           </p>
 
           <Link
-            href="\contact"
+            href="https://tally.so/r/5BX5QM"
+            target="_blank"
             className="inline-flex items-center gap-2 h-12 sm:h-14 md:h-15 bg-neutral-200 text-black rounded-full text-sm sm:text-base font-semibold transition hover:bg-neutral-800 p-1 group duration-200 hover:text-neutral-900 w-full sm:w-auto justify-between"
           >
             <span className="px-3 sm:px-4 group-hover:text-neutral-200 text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-3 sm:py-4 md:py-5 text-neutral-800 font-instrument-serif">
