@@ -1,4 +1,4 @@
-const baseUrl = "https://theclosure.studio";
+const baseUrl = "https://theclosurestudio.vercel.app";
 
 export default function sitemap() {
   const routes = [
