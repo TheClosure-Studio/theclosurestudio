@@ -5,10 +5,51 @@ import LoadingAnimation from "./components/LoadingAnimation";
 import ScrollToTop from "./components/ScrollToTop";
 import { fontVariables } from "./fonts/fonts";
 
+const siteUrl = "https://theclosurestudio.vercel.app";
+
 export const metadata = {
+  metadataBase: new URL(siteUrl),
   title: "The Closure Studio",
   description:
-    "Transform your digital vision into reality. Professional web development services that close the gap between your ideas and your audience.",
+    "Transform your digital vision into reality. Professional web experiences, branding and product design crafted for ambitious teams.",
+  keywords: [
+    "The Closure Studio",
+    "web development agency",
+    "Next.js studio",
+    "branding and UI/UX",
+    "Framer Motion",
+    "creative studio",
+  ],
+  authors: [{ name: "The Closure Studio" }],
+  creator: "The Closure Studio",
+  openGraph: {
+    title: "The Closure Studio — Websites, Products & Brands",
+    description:
+      "A multidisciplinary studio building bold websites, immersive product experiences and premium brand systems.",
+    url: siteUrl,
+    siteName: "The Closure Studio",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "The Closure Studio — Digital products, websites and brand design",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Closure Studio",
+    description:
+      "Websites, product experiences and brand systems for teams that want to stand out.",
+    images: ["/og.jpg"],
+    creator: "@ClosureStudio",
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

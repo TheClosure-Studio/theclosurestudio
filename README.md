@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Closure Studio – Web Experience Stack
 
-## Getting Started
+Single repository for the public marketing site and project studio pages of **The Closure Studio**.  
+Built with the Next.js App Router, Tailwind CSS v4, Framer Motion and several bespoke components (Fractal hero, stacked services, etc.).
 
-First, run the development server:
+## Tech Stack
+
+| Layer      | Stack                                                              |
+| ---------- | ------------------------------------------------------------------ |
+| Framework  | Next.js 16 (App Router, React 19)                                  |
+| Styling    | Tailwind CSS v4 + custom globals                                   |
+| Animation  | Framer Motion + custom WebGL shader hero                           |
+| Assets     | `/public` folder (hero export, OG image, favicon, service imagery) |
+| Deployment | Vercel (`vercel.json`, `app/robots.js`, `app/sitemap.js`, OG tags) |
+
+## Develop Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# visit http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Useful scripts:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+| Command         | Description                       |
+| --------------- | --------------------------------- |
+| `npm run dev`   | Start local dev server            |
+| `npm run build` | Production build (used by Vercel) |
+| `npm run start` | Preview production build locally  |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Directory Cheatsheet
 
-## Learn More
+- `app/` – App Router pages, SEO routes (`layout`, `robots.js`, `sitemap.js`)
+- `app/components/` – Reusable UI (Navbar, FractalGlassHero, Services, etc.)
+- `public/` – Static assets (`og.jpg`, `favicon.svg`, hero exports, project images)
+- `app/icon.svg` – Source for favicons/manifest icons
 
-To learn more about Next.js, take a look at the following resources:
+## SEO & Sharing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app/layout.js` defines canonical URLs, OpenGraph + Twitter cards referencing `/og.jpg`.
+- `app/robots.js` and `app/sitemap.js` are served automatically by Next.js (no manual files needed).
+- `public/og.jpg` is a lightweight placeholder OG asset (replace with branded artwork when ready).
+- `public/favicon.svg` & `app/icon.svg` share the custom logomark.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment Notes
 
-## Deploy on Vercel
+- Vercel configuration lives in `vercel.json` (Next.js framework, build command, dev command, region).
+- Every push to the default branch can be auto-deployed via Vercel; preview deployments inherit the same SEO/meta setup.
+- Remember to update the OG image/favicons if brand assets change.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing / TODOs
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Keep hero WebGL + fallback sections in sync when editing `FractalGlassHero`.
+- Update sitemap routes if new pages are added.
+- Replace the placeholder OG image with a designed export before production marketing pushes.
