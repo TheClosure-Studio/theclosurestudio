@@ -32,7 +32,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/og.jpg",
+        url: `${siteUrl}/og.jpg`,
         width: 1200,
         height: 630,
         alt: "The Closure Studio — Digital products, websites and brand design",
@@ -44,7 +44,7 @@ export const metadata = {
     title: "The Closure Studio",
     description:
       "Websites, product experiences and brand systems for teams that want to stand out.",
-    images: ["/og.jpg"],
+    images: [`${siteUrl}/og.jpg`],
     creator: "@ClosureStudio",
   },
   alternates: {
@@ -61,6 +61,24 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={fontVariables}>
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "The Closure Studio",
+              url: siteUrl,
+              logo: `${siteUrl}/favicon.svg`,
+              sameAs: [
+                "https://www.instagram.com/theclosure.studio/",
+                "https://x.com/ClosureStudio",
+                "https://www.linkedin.com/the-closure-studio/",
+              ],
+            }),
+          }}
+        />
         <LoadingAnimation />
         <ScrollToTop />
         <LenisProvider>
