@@ -175,7 +175,7 @@ function SplitTitle({ title }) {
         {firstHalf}
       </div>
       {secondHalf && (
-        <div className="font-boldonse text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-5 tracking-wide">
+        <div className="font-boldonse text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pb-5 pt-2 tracking-wide">
           {" "}
           {secondHalf}
         </div>
