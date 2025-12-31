@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 const stages = [
   {
     number: "01",
-    title: "Project Take-up & Requirement Analysis",
+    title: "Requirement Analysis",
     description:
       "We begin by understanding your vision, goals, and specific requirements. Through detailed discussions and analysis, we create a comprehensive project roadmap that aligns perfectly with your business objectives.",
     accent: "#8B5CF6",
