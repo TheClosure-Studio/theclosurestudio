@@ -467,7 +467,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
                       <Link
                         key={link.href}
                         href={link.href}
-                        className={`font-medium transition-all duration-300 ease-in-out relative group inline-block ${
+                        className={`font-light transition-all duration-300 ease-in-out relative group inline-block ${
                           pathname === link.href
                             ? "opacity-100 text-white"
                             : "opacity-60 hover:opacity-100"
