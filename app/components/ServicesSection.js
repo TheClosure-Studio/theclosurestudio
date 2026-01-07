@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+
 
 const services = [
   {
@@ -67,28 +67,7 @@ const services = [
   },
 ];
 
-const textReveal = {
-  hidden: { y: 40, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.6,
-      ease: [0.25, 0.1, 0.25, 1],
-    },
-  },
-};
 
-const articleVariants = {
-  hidden: { opacity: 1 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.2,
-    },
-  },
-};
 
 function DotPattern({ accent, highlights }) {
   const dots = Array.from({ length: 81 });
@@ -196,13 +175,9 @@ const ServicesSection = () => {
         </div>
         <div className="mx-auto px-4 sm:px-6 md:px-10 pt-6 sm:pt-8 md:pt-10 pb-6 sm:pb-8 md:pb-10 space-y-6 sm:space-y-8 md:space-y-10">
           {services.map((service) => (
-            <motion.article
+            <article
               key={service.id}
               className="rounded-2xl sm:rounded-3xl md:rounded-[32px] border border-black bg-white/80 backdrop-blur-lg"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
-              variants={articleVariants}
             >
               <div className="flex flex-col md:flex-col md:items-start">
                 <div className="w-full border-b px-4 sm:px-6 md:px-7 py-4 sm:py-6 md:py-8 font-boldonse text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl flex items-center justify-between overflow-hidden">
@@ -218,9 +193,9 @@ const ServicesSection = () => {
                   <div className="flex-1 space-y-3 sm:space-y-4 px-4 sm:px-6 md:px-7 w-full">
                     <div className="flex flex-col gap-3 sm:gap-4 overflow-hidden">
                       <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-neutral-700 leading-relaxed space-y-1 font-instrument-serif">
-                        <motion.span className="block" variants={textReveal}>
+                        <span className="block">
                           {service.description}
-                        </motion.span>
+                        </span>
                         <div className="w-full md:hidden lg:w-80 flex justify-center md:justify-end mt-4 md:mt-0">
                     <div className="rounded-2xl sm:rounded-3xl border border-white/30 bg-linear-to-br from-white/30 to-white/10 p-4 sm:p-6 md:p-8">
                       <DotPattern
@@ -233,25 +208,23 @@ const ServicesSection = () => {
                       <div className="text-neutral-600 font-instrument-serif text-base sm:text-lg md:text-xl font-semibold p-4 sm:p-5 md:p-6">
                         {service.benefits.map((ben, index) => (
                           <div key={index} className="mb-2">
-                            <motion.span
+                            <span
                               className="block"
-                              variants={textReveal}
                             >
                               {ben}
-                            </motion.span>
+                            </span>
                           </div>
                         ))}
                       </div>
                     </div>
                     <div className="text-sm sm:text-base md:text-lg text-neutral-700 leading-relaxed space-y-1">
-                      <motion.span className="block" variants={textReveal}>
+                      <span className="block">
                         {service.categories}
-                      </motion.span>
+                      </span>
                     </div>
 
-                    <motion.div
+                    <div
                       className="flex flex-wrap items-center gap-4 sm:gap-6 mt-4"
-                      variants={textReveal}
                     >
                       <Link
                         href={service.link}
@@ -266,7 +239,7 @@ const ServicesSection = () => {
                           </span>
                         </span>
                       </Link>
-                    </motion.div>
+                    </div>
                   </div>
 
                   <div className="w-full hidden md:w-72 lg:w-80 md:flex justify-center md:justify-end mt-4 md:mt-0">
@@ -279,7 +252,7 @@ const ServicesSection = () => {
                   </div>
                 </div>
               </div>
-            </motion.article>
+            </article>
           ))}
         </div>
       </section>

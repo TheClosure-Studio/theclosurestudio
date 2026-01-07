@@ -27,7 +27,7 @@ export default function Home() {
             />
             <div className="flex flex-wrap items-center gap-4 sm:gap-6">
               <Link
-                href="\contact"
+                href="/contact"
                 className="inline-flex items-center gap-2 h-9 sm:h-10 bg-neutral-900 text-white rounded-full text-sm sm:text-base font-semibold transition hover:bg-neutral-200 p-1 group duration-500 hover:text-neutral-900"
               >
                 <span className="px-3 sm:px-4 group-hover:text-neutral-800 text-sm sm:text-base">
@@ -119,7 +119,7 @@ export default function Home() {
               </div>
               <div>
               <Link
-              href="\project-studio"
+              href="/project-studio"
               className="inline-flex items-center  h-12   text-neutral-300 rounded-full text-sm  font-semibold transition  p-1 group duration-500  w-full  justify-between"
             >
               <span className=" text-sm  py-1  text-neutral-200">
@@ -141,7 +141,7 @@ export default function Home() {
               of code to the final launch.
             </p>
             <Link
-              href="\project-studio"
+              href="/project-studio"
               className="inline-flex items-center gap-2 h-12 sm:h-14 md:h-15 bg-neutral-200 text-black rounded-full text-sm sm:text-base font-semibold transition hover:bg-neutral-800 p-1 group duration-500 hover:text-neutral-900 w-full sm:w-auto justify-between"
             >
               <span className="px-3 sm:px-4 group-hover:text-neutral-200 text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-3 sm:py-4 md:py-5 text-neutral-800">

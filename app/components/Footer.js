@@ -121,7 +121,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3 justify-center">
               <Link
                 href="/"
-                className="text-2xl sm:text-2xl md:text-3xl font-boldonse flex items-end justify-center"
+                className="text-2xl sm:text-2xl md:text-3xl font-boldonse flex items-end justify-center text-neutral-500"
               >
                 
                 <span className="">
@@ -147,7 +147,8 @@ export default function Footer() {
                     height={100}
                     className="w-6 h-6 sm:w-8 sm:h-8 md:w-10"
                   /> */}
-                </span>The Closure Studio.
+                </span>
+                <span className="text-neutral-400">The Closure Studio.</span>
               </Link>
             </div>
            

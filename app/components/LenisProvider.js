@@ -9,8 +9,8 @@ export default function LenisProvider({ children }) {
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // smooth ease-out
       smoothWheel: true,
-      smoothTouch: false,
-      gestureOrientation: "vertical",
+      smoothTouch: true, // Enabled for consistent feel
+      touchMultiplier: 2, // Better touch responsiveness
     });
 
     // Make lenis available globally for ScrollToTop

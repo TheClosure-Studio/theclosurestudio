@@ -173,8 +173,9 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
+    { href: "/project-studio", label: "Project-Studio" },
     { href: "/work", label: "Work" },
-    { href: "/project-studio", label: "Project Studio" },
+    
     { href: "/services", label: "Services" },
   ];
 
@@ -462,7 +463,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
               {/* Right Side - Navigation - Hidden on screens < lg */}
               <div className="hidden lg:flex flex-col items-end md:items-end justify-between h-full pb-10 md:pb-20 w-full md:w-auto">
                 <div className="flex flex-col sm:flex-row items-end sm:items-center gap-4 sm:gap-6 md:gap-18 font-space-grotesk mb-4 md:mb-0">
-                  <div className="flex flex-wrap items-center gap-3 sm:gap-6 text-neutral-100">
+                  <div className="flex flex-wrap items-center gap-3 sm:gap-4 md:gap-0 text-neutral-100">
                     {navLinks.map((link) => (
                       <Link
                         key={link.href}
@@ -482,7 +483,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
                   <div className="font-boldonse bg-white text-black px-2 sm:px-3 py-1 rounded-md">
                     <Link
                       href="/contact"
-                      className="text-xs sm:text-sm font-medium"
+                      className="text-xs sm:text-md font-medium"
                     >
                       Contact Us
                     </Link>
@@ -502,7 +503,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
                   <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center w-full gap-2">
                     <Link
                       href="/contact"
-                      className="flex items-center justify-between gap-2 h-10 bg-neutral-800 text-white rounded-full text-xs sm:text-sm md:text-base transition hover:bg-neutral-200 p-1 group duration-500 hover:text-neutral-900 w-full sm:w-1/2"
+                      className="flex items-center justify-between gap-2 h-10 bg-neutral-800 text-white rounded-full text-xs sm:text-md md:text-base transition hover:bg-neutral-200 p-1 group duration-500 hover:text-neutral-900 w-full sm:w-1/2"
                     >
                       <span className="px-3 sm:px-4 group-hover:text-neutral-800">
                         Let&apos;s Talk
@@ -515,7 +516,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
                     </Link>
                     <Link
                       href="/contact"
-                      className="flex items-center justify-between gap-2 h-10 bg-neutral-800 text-white rounded-full text-xs sm:text-sm md:text-base transition hover:bg-neutral-200 p-1 group duration-500 hover:text-neutral-900 w-full sm:w-1/2"
+                      className="flex items-center justify-between gap-2 h-10 bg-neutral-800 text-white rounded-full text-xs sm:text-md md:text-base transition hover:bg-neutral-200 p-1 group duration-500 hover:text-neutral-900 w-full sm:w-1/2"
                     >
                       <span className="px-3 sm:px-4 group-hover:text-neutral-800">
                         Explore Studio
@@ -782,7 +783,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
                       className="font-boldonse transition-colors duration-300 py-4 md:py-6 w-full md:w-auto"
                     >
                       <Link
-                        href="\contact"
+                        href="/contact"
                         className="inline-flex items-center gap-2 h-12 sm:h-14 md:h-15 bg-neutral-200 text-black rounded-full text-sm sm:text-base font-semibold transition hover:bg-neutral-800 p-1 group duration-500 hover:text-neutral-900 w-full md:w-auto justify-between"
                       >
                         <span className="px-3 sm:px-4 group-hover:text-neutral-200 text-lg sm:text-xl md:text-2xl text-neutral-800 py-2 sm:py-3 md:py-5">
@@ -832,7 +833,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
             <div className="flex flex-col md:flex-row items-start md:items-start justify-between gap-6 md:gap-10 h-full">
               {/* Left Side - Logo and Taglines */}
               <div className="flex flex-col justify-between h-full w-full md:w-auto">
-                <div className="font-boldonse flex flex-col font-bold text-3xl sm:text-4xl md:text-[5vw] lg:gap-4 gap-2">
+                <div className="font-boldonse flex flex-col font-bold text-3xl sm:text-4xl md:text-[5vw] lg:gap-4 gap-2 text-neutral-400">
                   <h1 className="text-3xl sm:text-4xl md:text-[5vw]">
                     The Closure
                   </h1>
@@ -857,28 +858,28 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
 
               {/* Right Side - Navigation - Hidden on screens < lg */}
               <div className="hidden lg:flex flex-col items-end md:items-end justify-between h-full pb-10 md:pb-20 w-full md:w-auto">
-                <div className="flex flex-col sm:flex-row items-end sm:items-center gap-4 sm:gap-6 md:gap-18 font-space-grotesk mb-4 md:mb-0">
-                  <div className="flex flex-wrap items-center gap-3 sm:gap-6 text-neutral-100">
+                <div className="flex flex-col sm:flex-row items-end sm:items-center gap-4 sm:gap-6 md:gap-8 font-space-grotesk mb-4 md:mb-0">
+                  <div className="flex flex-wrap items-center gap-3 sm:gap-5 text-neutral-100">
                     {navLinks.map((link) => (
                       <Link
                         key={link.href}
                         href={link.href}
-                        className={` font-medium transition-all duration-300 ease-in-out relative group inline-block ${
+                        className={` font-light transition-all duration-300 ease-in-out relative group inline-block text-sm ${
                           pathname === link.href
                             ? "opacity-100 text-white"
                             : "opacity-60 hover:opacity-100"
                         }`}
                       >
                         {link.label}
-                        <span className="absolute bottom-0 left-0 w-0 h-px bg-white/50 transition-all duration-500 ease-in-out group-hover:w-full" />
+                        <span className="absolute bottom-0 left-0 w-0 h-[0.5px] bg-white/50 transition-all duration-500 ease-in-out group-hover:w-full" />
                       </Link>
                     ))}
                   </div>
 
-                  <div className="font-boldonse bg-white text-black px-2 sm:px-3 py-1 rounded-md">
+                  <div className="font-space-grotesk  bg-white text-black px-2 sm:px-6 py-1 rounded-2xl hover:bg-neutral-800 hover:text-white transition-all duration-300 ease-in-out border-neutral-800 border">
                     <Link
                       href="/contact"
-                      className="text-xs sm:text-sm font-medium"
+                      className="text-xs sm:text-sm font-bold"
                     >
                       Contact Us
                     </Link>
@@ -889,7 +890,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
               {/* Bottom Right Card - How We Build Projects - Visible on all screens */}
               <div className="p-2 absolute bottom-15 md:bottom-5 right-0 md:right-5">
                 <div className=" flex flex-col gap-3 md:gap-4 pb-4 md:pb-8 font-instrument-serif max-w-full md:max-w-115 bg-neutral-900 p-4 md:p-6 rounded-xl md:rounded-2xl w-full md:w-auto">
-                  <h2 className="text-sm sm:text-base md:text-lg text-neutral-300">
+                  <h2 className="text-sm sm:text-base md:text-lg text-neutral-500">
                     Your business needs a website that stands out in the modern
                     era. We build websites that boost your business. Let&apos;s
                     work together to level up your business.

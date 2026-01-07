@@ -146,15 +146,15 @@ export default function ProjectCard({
         <div className="p-4 sm:p-6 md:p-8 lg:p-10 absolute inset-0 w-full h-full flex items-start justify-between flex-col">
           <div>
             <h2
-              className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold ${
-                white ? "text-white" : "text-neutral-900"
+              className={`text-xl sm:text-xl md:text-2xl lg:text-2xl  font-boldonse ${
+                white ? "text-netural-500" : "text-neutral-900"
               }`}
             >
               {title}
             </h2>
 
             <h3
-              className={`text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mt-1 sm:mt-2 ${
+              className={`text-lg sm:text-xl md:text-xl lg:text-lg font-semibold mt-1 sm:mt-2 font-space-grotesk ${
                 white ? "text-white/70" : "text-neutral-900/70"
               }`}
             >

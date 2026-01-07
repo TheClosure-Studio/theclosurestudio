@@ -3,28 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.2,
-    },
-  },
-};
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.4,
-      ease: [0.25, 0.1, 0.25, 1],
-    },
-  },
-};
 
 const answerVariants = {
   hidden: {
@@ -131,47 +110,21 @@ export default function FAQSection() {
   return (
     <section id="faq" className="py-10 sm:py-16 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          className="text-center mb-8 sm:mb-10 md:mb-12"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
-        >
-          <motion.h2
-            className="  md:text-4xl lg:text-5xl font-bold text-neutral-800 mb-3 sm:mb-4 font-boldonse"
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
+        <div className="text-center mb-8 sm:mb-10 md:mb-12">
+          <h2 className="  md:text-4xl lg:text-5xl font-bold text-neutral-800 mb-3 sm:mb-4 font-boldonse">
             Frequently Asked Questions
-          </motion.h2>
-          <motion.p
-            className="text-base sm:text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto px-4"
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
+          </h2>
+          <p className="text-base sm:text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto px-4">
             Got questions? We&apos;ve got answers. Find everything you need to
             know about working with us.
-          </motion.p>
-        </motion.div>
+          </p>
+        </div>
 
-        <motion.div
-          className="max-w-4xl mx-auto space-y-3 sm:space-y-4"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2, margin: "0px" }}
-        >
+        <div className="max-w-4xl mx-auto space-y-3 sm:space-y-4">
           {faqs.map((faq) => (
-            <motion.div
+            <div
               key={faq.id}
-              variants={itemVariants}
               className="bg-neutral-800 border border-black/20 rounded-lg overflow-hidden backdrop-blur-sm hover:bg-black/90 hover:border-white/20 transition-colors"
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <motion.button
                 onClick={() => toggleFAQ(faq.id)}
@@ -230,9 +183,9 @@ export default function FAQSection() {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

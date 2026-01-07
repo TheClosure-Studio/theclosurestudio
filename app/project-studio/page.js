@@ -171,11 +171,11 @@ function SplitTitle({ title }) {
 
   return (
     <>
-      <div className="font-boldonse text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pb-3 text-neutral-200">
+      <div className="font-extrabold text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pb-3 text-neutral-200">
         {firstHalf}
       </div>
       {secondHalf && (
-        <div className="font-boldonse text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pb-5 pt-2 tracking-wide">
+        <div className="font-instrument-serif text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl pb-5 pt-2 tracking-wide">
           {" "}
           {secondHalf}
         </div>
@@ -193,14 +193,14 @@ export default function ProjectStudio() {
         <div className="mx-auto px-2 sm:px-5 md:px-10 py-12 sm:py-16 md:py-24 flex items-center w-full">
           <div className="h-full w-full">
             <div className="flex items-center justify-between text-white font-boldonse text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl py-4 sm:py-6 md:py-7 px-4 sm:px-8 md:px-12 w-full">
-              <h2 className="tracking-wider text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+              <h2 className="tracking-wider text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-neutral-200">
                 Project Studio
               </h2>
               <div className="font-extrabold pb-4 sm:pb-6 md:pb-10 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-7xl">
                 ↓
               </div>
             </div>
-            <div className="text-neutral-300 font-instrument-serif text-sm sm:text-base md:text-lg lg:text-xl px-4 sm:px-8 md:px-12 max-w-4xl">
+            <div className="text-neutral-500 font-instrument-serif text-sm sm:text-base md:text-lg lg:text-xl px-4 sm:px-8 md:px-12 max-w-4xl">
               <p>
                 Discover how we transform your ideas into exceptional digital
                 experiences. Our structured 9-stage approach ensures every
@@ -226,15 +226,15 @@ export default function ProjectStudio() {
               >
                 <div className="flex flex-col  md:items-start w-full md:w-4/5">
                   <div className="w-full pt-4 sm:pt-6 md:pt-8 text-neutral-400 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl flex items-center justify-between overflow-hidden border-b md:border-b-0 pb-4 md:pb-0">
-                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl flex gap-2 sm:gap-3 flex-col">
-                      <SplitTitle title={stage.title} />
+                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl flex gap-2 sm:gap-3 flex-col text-neutral-200 font-extrabold uppercase">
+                      {stage.title}
                     </h3>
                   </div>
 
                   <div className="flex flex-col md:flex-row items-start md:items-center justify-between py-4 sm:py-6 md:py-8 w-full max-w-4xl gap-4 md:gap-0">
                     <div className="flex-1 space-y-3 sm:space-y-4 w-full">
                       <div className="flex flex-col gap-3 sm:gap-4 overflow-hidden">
-                        <div className="text-base sm:text-lg md:text-xl lg:text-2xl text-neutral-300 leading-relaxed space-y-1 font-instrument-serif">
+                        <div className="text-base sm:text-lg md:text-xl lg:text-xl text-neutral-400 leading-relaxed space-y-1 font-instrument-serif tracking-wide">
                           <motion.span
                             className="block"
                             variants={textReveal}
@@ -254,7 +254,7 @@ export default function ProjectStudio() {
                     />
                   </div>
                 </div>
-                      <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl pt-4 sm:pt-6 md:pt-8 font-instrument-serif  text-neutral-600">
+                      <p className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-xl pt-4 sm:pt-6 md:pt-8   text-neutral-600">
                         Stage - <span className="">{stage.number}</span>
                       </p>
                       
@@ -310,18 +310,18 @@ export default function ProjectStudio() {
         </div>
 
         {/* CTA Section */}
-        <div className="mx-auto px-4 sm:px-6 md:px-10 py-6 sm:py-8 md:py-10">
+        <div className="mx-auto px-4 sm:px-6 md:px-10 py-20 sm:py-8 md:py-10">
           <motion.div
-            className="rounded-2xl sm:rounded-3xl md:rounded-[32px] border border-black bg-neutral-900 text-white/80 p-4 sm:p-6 md:p-8 lg:p-10 text-center"
+            className="rounded-2xl sm:rounded-3xl md:rounded-[32px] border border-black bg-neutral-900 text-white/80 p-4 sm:p-6 md:p-8 lg:p-10  text-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={textReveal}
           >
-            <h2 className="text-md sm:text-3xl md:text-4xl lg:text-5xl font-boldonse mb-3 sm:mb-4">
+            <h2 className="text-md sm:text-3xl md:text-4xl lg:text-5xl font-boldonse mb-3 sm:mb-4 text-neutral-500 py-5">
               Ready to Start Your Project?
             </h2>
-            <p className="text-base sm:text-lg md:text-xl font-instrument-serif text-neutral-300 mb-4 sm:mb-6 max-w-2xl mx-auto px-4">
+            <p className="text-base   text-neutral-600 mb-4 sm:mb-6 max-w-2xl mx-auto px-4">
               Let&apos;s discuss how we can bring your vision to life with our
               proven 9-stage process.
             </p>
