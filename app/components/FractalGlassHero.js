@@ -462,7 +462,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
 
               {/* Right Side - Navigation - Hidden on screens < lg */}
               <div className="hidden lg:flex flex-col items-end md:items-end justify-between h-full pb-10 md:pb-20 w-full md:w-auto">
-                <div className="flex flex-col sm:flex-row items-end sm:items-center gap-4 sm:gap-6 md:gap-18 font-space-grotesk mb-4 md:mb-0">
+                <div className="flex flex-col sm:flex-row items-end sm:items-center gap-4 sm:gap-6 md:gap-8 font-space-grotesk mb-4 md:mb-0 bg-neutral-900/50 backdrop-blur-md border border-white/10 rounded-full px-3 py-1 shadow-lg">
                   <div className="flex flex-wrap items-center gap-3 sm:gap-4 md:gap-0 text-neutral-100">
                     {navLinks.map((link) => (
                       <Link
@@ -858,13 +858,13 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
 
               {/* Right Side - Navigation - Hidden on screens < lg */}
               <div className="hidden lg:flex flex-col items-end md:items-end justify-between h-full pb-10 md:pb-20 w-full md:w-auto">
-                <div className="flex flex-col sm:flex-row items-end sm:items-center gap-4 sm:gap-6 md:gap-8 font-space-grotesk mb-4 md:mb-0">
-                  <div className="flex flex-wrap items-center gap-3 sm:gap-5 text-neutral-100">
+                <div className="flex flex-col sm:flex-row items-end sm:items-center gap-4 sm:gap-6 md:gap-2 font-space-grotesk mb-4 md:mb-0 bg-neutral-900 rounded-full px-2 py-1 shadow-lg uppercase">
+                  <div className="flex flex-wrap items-center gap-3 sm:gap-5 text-neutral-100 px-3">
                     {navLinks.map((link) => (
                       <Link
                         key={link.href}
                         href={link.href}
-                        className={` font-light transition-all duration-300 ease-in-out relative group inline-block text-sm ${
+                        className={` font-light transition-all duration-300 ease-in-out relative group inline-block text-xs ${
                           pathname === link.href
                             ? "opacity-100 text-white"
                             : "opacity-60 hover:opacity-100"
@@ -876,7 +876,7 @@ const FractalGlassHero = ({ imageUrl = "/export.png" }) => {
                     ))}
                   </div>
 
-                  <div className="font-space-grotesk  bg-white text-black px-2 sm:px-6 py-1 rounded-2xl hover:bg-neutral-800 hover:text-white transition-all duration-300 ease-in-out border-neutral-800 border">
+                  <div className="font-space-grotesk  bg-white/60 text-black px-2 sm:px-6 py-1 rounded-2xl hover:bg-neutral-800 hover:text-white transition-all duration-300 ease-in-out border-neutral-800 border">
                     <Link
                       href="/contact"
                       className="text-xs sm:text-sm font-bold"

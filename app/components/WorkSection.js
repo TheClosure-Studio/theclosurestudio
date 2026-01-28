@@ -2,7 +2,27 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    id: 1,
+    id: 0,
+    image: "/dataquotes-itservice.png",
+    title: "DataQuotes",
+    type: "IT Service Provider",
+    category: "Web Design & Development",
+    year: "2026",
+    link: "https://dataquotes.net/it-services",
+    white : false
+  },
+  {
+  id: 1,
+    image: "/crpix.png",
+    title: "CR Pix Photography",
+    type: "Photography Platform",
+    category: "Web Design & Development",
+    year: "2026",
+    link: "https://crpix.in",
+    white : false
+  },
+  {
+    id:   2,
     image: "/dataquotes.png",
     title: "DataQuotes",
     type: "Edu-Tech Platform",
@@ -12,7 +32,7 @@ const projects = [
     white : true
   },
   {
-    id: 2,
+    id: 3,
     image: "/champ.jpeg",
     title: "Koushik-Champ",
     type: "Portfolio Website",
@@ -22,7 +42,7 @@ const projects = [
     white : false
   },
   {
-    id: 3,
+    id: 4,
     image: "/fmcg.png",
     title: "FMCG Website",
     type: "Blog Website & Branding",
@@ -32,12 +52,12 @@ const projects = [
     white : true
   },
   {
-    id: 4,
+    id: 5,
     image: "/prepgrid.png",
     title: "PrepGrid",
     type: "AI based Interview Prep",
     category: "Web Design & Development",
-    year: "2024",
+    year: "2025",
     link: "https://prepgrid.vercel.app/",
     white : false
   },
@@ -127,7 +147,7 @@ export default function WorkSection() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className={index % 3 === 0 ? "col-span-1 sm:col-span-2" : "col-span-1"}
+                className={index === 3 || index === 4 ? "col-span-1" : "col-span-1 sm:col-span-2"}
               >
                 <ProjectCard
                   key={project.id}

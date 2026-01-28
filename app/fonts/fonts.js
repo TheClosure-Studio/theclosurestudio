@@ -1,4 +1,4 @@
-import { Boldonse, Instrument_Serif, Space_Grotesk } from "next/font/google";
+import { Boldonse, Instrument_Serif, Space_Grotesk, Bitcount_Grid_Double } from "next/font/google";
 
 // Google Fonts - All fonts loaded from Google Fonts
 export const instrumentSerif = Instrument_Serif({
@@ -14,11 +14,16 @@ export const spaceGrotesk = Space_Grotesk({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+
 export const boldonse = Boldonse({
   variable: "--font-boldonse",
   subsets: ["latin"],
   weight: ["400"],
 });
-
+export const pixelifySans = Bitcount_Grid_Double({
+  variable: "--font-pixelify-sans",
+  subsets: ["latin"],
+  weight: ["400"],
+});
 // Export all font variables for easy use
-export const fontVariables = `${instrumentSerif.variable} ${spaceGrotesk.variable} ${boldonse.variable}`;
+export const fontVariables = `${instrumentSerif.variable} ${spaceGrotesk.variable} ${boldonse.variable} ${pixelifySans.variable}`;

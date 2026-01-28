@@ -114,6 +114,11 @@ html.lenis body {
   font-family: var(--font-space-grotesk), Arial, sans-serif;
 }
 
+.font-pixelify-sans {
+  font-family: var(--font-pixelify-sans), monospace;
+}
+
+
 a {
   color: inherit;
   text-decoration: none;
