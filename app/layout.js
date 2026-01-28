@@ -65,18 +65,27 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           suppressHydrationWarning
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "The Closure Studio",
-              url: siteUrl,
-              logo: `${siteUrl}/favicon.svg`,
-              sameAs: [
-                "https://www.instagram.com/theclosure.studio/",
-                "https://x.com/ClosureStudio",
-                "https://www.linkedin.com/the-closure-studio/",
-              ],
-            }),
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "The Closure Studio",
+                url: siteUrl,
+                logo: `${siteUrl}/favicon.svg`,
+                sameAs: [
+                  "https://www.instagram.com/theclosure.studio/",
+                  "https://x.com/ClosureStudio",
+                  "https://www.linkedin.com/the-closure-studio/",
+                ],
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "The Closure Studio",
+                alternateName: ["Closure Studio", "CLS", "cls"],
+                url: siteUrl,
+              },
+            ]),
           }}
         />
         <LoadingAnimation />
